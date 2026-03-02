@@ -1,3 +1,104 @@
-<h1>Mensaje enviado correctamente 🚀</h1>
-<p>Te responderé pronto.</p>
-<a href="/">Volver al inicio</a>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mensaje Enviado | Ricardo Patiño</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  --cyan: #00f5ff;
+  --purple: #b040fb;
+  --dark: #050818;
+  --card: rgba(10,15,46,0.85);
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  min-height: 100vh;
+  background: var(--dark);
+  font-family: 'Rajdhani', sans-serif;
+  color: #e0eaff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Fondo sutil */
+body::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at center, rgba(0,245,255,.08), transparent 60%);
+  z-index: 0;
+}
+
+/* Tarjeta */
+.thanks-card {
+  position: relative;
+  z-index: 1;
+  background: var(--card);
+  border: 1px solid rgba(0,245,255,.2);
+  padding: 60px 50px;
+  text-align: center;
+  max-width: 500px;
+  width: 90%;
+  clip-path: polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);
+  box-shadow: 0 0 40px rgba(0,245,255,.15);
+  animation: fadeIn .8s ease forwards;
+}
+
+h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  background: linear-gradient(90deg,var(--cyan),var(--purple));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #8899cc;
+  margin-bottom: 40px;
+}
+
+.back-btn {
+  font-family: 'Orbitron', sans-serif;
+  font-size: .75rem;
+  letter-spacing: .15em;
+  padding: 14px 28px;
+  text-decoration: none;
+  color: var(--dark);
+  background: linear-gradient(90deg,var(--cyan),var(--purple));
+  clip-path: polygon(12px 0%,100% 0%,calc(100% - 12px) 100%,0% 100%);
+  transition: all .2s;
+  display: inline-block;
+}
+
+.back-btn:hover {
+  box-shadow: 0 0 30px rgba(0,245,255,.4);
+  transform: translateY(-2px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+</style>
+</head>
+<body>
+
+<div class="thanks-card">
+  <h1>🚀 MENSAJE ENVIADO</h1>
+  <p>Gracias por contactarme.<br>Te responderé lo antes posible.</p>
+  <a href="/" class="back-btn">VOLVER AL INICIO</a>
+</div>
+
+</body>
+</html>
