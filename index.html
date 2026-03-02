@@ -361,25 +361,48 @@
         </div>
       </div>
       <div class="reveal">
-        <form name="contact" method="POST" data-netlify="true" class="contact-form">
+        <form name="contact" 
+      method="POST" 
+      data-netlify="true" 
+      action="/gracias.html" 
+      class="contact-form">
+
+  <!-- Necesario para que Netlify detecte el formulario -->
   <input type="hidden" name="form-name" value="contact">
 
   <div class="form-group">
     <label class="form-label">// TU NOMBRE</label>
-    <input type="text" name="name" class="form-input" placeholder="Player One">
+    <input 
+      type="text" 
+      name="name" 
+      class="form-input" 
+      placeholder="Player One" 
+      required>
   </div>
 
   <div class="form-group">
     <label class="form-label">// EMAIL</label>
-    <input type="email" name="email" class="form-input" placeholder="email@ejemplo.com">
+    <input 
+      type="email" 
+      name="email" 
+      class="form-input" 
+      placeholder="email@ejemplo.com" 
+      required>
   </div>
 
   <div class="form-group">
     <label class="form-label">// MENSAJE</label>
-    <textarea name="message" class="form-textarea" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+    <textarea 
+      name="message" 
+      class="form-textarea" 
+      placeholder="Cuéntame sobre tu proyecto..." 
+      required></textarea>
   </div>
 
-  <button type="submit" class="form-btn">⚡ ENVIAR MENSAJE</button>
+  <button type="submit" class="form-btn">
+    ⚡ ENVIAR MENSAJE
+  </button>
+
 </form>
       </div>
     </div>
